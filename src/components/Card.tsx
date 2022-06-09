@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 
 //перечисление что будет содержать props variant
 export enum CardVariant {
@@ -13,13 +13,8 @@ interface CardProps {
   variant: CardVariant;
 }
 // children - будет являться всё что внутри карточки
-const Card: React.FC<CardProps> = ({
-  width,
-  height,
-  variant,
-  children,
-}) => {
-  const [state,setState] = useState(0)
+const Card: FC<CardProps> = ({ width, height, variant, children }) => {
+  // const [state,setState] = useState(0)
   return (
     <div
       style={{
