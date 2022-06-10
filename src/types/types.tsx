@@ -1,4 +1,3 @@
-
 // описываю глобальные стили которые будут использоваться в разных частях приложения
 
 // опысал какие конкретно поля будут у пользователя
@@ -13,4 +12,9 @@ export interface IUser {
   name: string;
   email: string;
   address: IAddress;
+}
+export interface ITodo {
+  id: number;
+  title: string;
+  completed: boolean;
 }
