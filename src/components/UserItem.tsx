@@ -1,7 +1,8 @@
-// выношу из yserlist отдельно взятого пользователя
+// выношу из userlist отдельно взятого пользователя
 import React, { FC } from "react";
 import { IUser } from "../types/types";
 
+// на вход передаю самого пользователя
 interface UserItemProps {
   user: IUser;
 }
